@@ -32,8 +32,6 @@ jobs:
     # needs: tests
 
     steps:
-      # - name: Change workdir
-      #   run: cd api_yamdb/
       - name: Check out the repo
         uses: actions/checkout@v2 
       - name: Set up Docker Buildx
