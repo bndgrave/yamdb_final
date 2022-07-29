@@ -11,8 +11,7 @@ services:
 
   # Контейнер Django
   web:
-    image: bndgrave/api_yamdb:latest
-    platform: linux/x86_64
+    build: ../api_yamdb/
     restart: always
     volumes:
       - static_value:/app/static/
