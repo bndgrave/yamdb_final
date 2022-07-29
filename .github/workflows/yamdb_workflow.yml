@@ -62,7 +62,6 @@ jobs:
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           sudo systemctl stop nginx
-          cd yamdb_final/infra/
           sudo docker-compose stop
           sudo docker-compose rm bndgrave/api_yamdb:latest
           sudo docker pull bndgrave/api_yamdb:latest
