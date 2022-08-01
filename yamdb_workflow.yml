@@ -46,7 +46,7 @@ jobs:
         with:
           file: api_yamdb/Dockerfile
           push: true
-          tags: bndgrave/api_yamdb:latest
+          tags: bndgrave/yamdb_final:latest
 
   deploy:
     runs-on: ubuntu-latest
@@ -63,8 +63,8 @@ jobs:
         script: |
           sudo systemctl stop nginx
           sudo docker-compose stop
-          sudo docker-compose rm bndgrave/api_yamdb:latest
-          sudo docker pull bndgrave/api_yamdb:latest
+          sudo docker-compose rm bndgrave/yamdb_final:latest
+          sudo docker pull bndgrave/yamdb_final:latest
 
           sudo docker-compose up -d
 
