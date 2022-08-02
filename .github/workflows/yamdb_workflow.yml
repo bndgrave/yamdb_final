@@ -61,7 +61,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
-          sudo systemctl stop nginx
           sudo docker-compose stop
           sudo docker-compose rm bndgrave/yamdb_final:latest
           sudo docker pull bndgrave/yamdb_final:latest

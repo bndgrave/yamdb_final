@@ -1,4 +1,4 @@
-# Проект «YaMDb»
+# Проект «YaMDb» http://bgyatube.ddns.net
 
 ![example workflow](https://github.com/bndgrave/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
